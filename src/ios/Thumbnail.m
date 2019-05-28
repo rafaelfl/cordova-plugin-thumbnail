@@ -124,6 +124,7 @@
         }
         CGFloat compressionQuality = [compressionPercent floatValue] / 100;
 
+        NSError* theError = nil;
         NSFileManager *fileManager = [NSFileManager defaultManager];
         if ([fileManager fileExistsAtPath:targetURL]) {
             NSLog(@"Thumbnail file already exists %@. Deleting it...", targetURL);
