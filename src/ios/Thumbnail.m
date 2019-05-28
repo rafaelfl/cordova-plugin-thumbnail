@@ -126,7 +126,7 @@
 
         NSFileManager *fileManager = [NSFileManager defaultManager];
         if ([fileManager fileExistsAtPath:targetURL]) {
-            NSLog(@"Thumbnail file already exists %@", targetURL);
+            NSLog(@"Thumbnail file already exists %@. Deleting it...", targetURL);
             [fileManager removeItemAtPath:targetURL error:&theError]
             //return;
         }
